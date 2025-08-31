@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <meta charest="UTF-8">
+    <meta charset="UTF-8">
     <title>PHP16章課題</title>
 </head>
 
@@ -16,10 +16,8 @@
             private $price;
 
             // メソッドを定義する
-                public function show_price(int $price){
-                $this->price = $price;
+                public function show_price(){
                 echo $this->price . '<br>';
-
                 }
 
             // コンストラクタを定義する
@@ -43,10 +41,8 @@
             private $weight;
 
             // メソッドを定義する
-                public function show_height(int $height){
-                    $this->height = $height;
+                public function show_height(){
                     echo $this->height . '<br>';
-
                 }
 
             // コンストラクタを定義する
@@ -66,8 +62,8 @@
 
 
         // メソッドにアクセスして実行する
-        $Food->show_price(250);
-        $Animal->show_height(60);
+        $Food->show_price();
+        $Animal->show_height();
 
         ?>
         </p>
